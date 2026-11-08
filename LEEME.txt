@@ -1,0 +1,25 @@
+MOCHILA S.O.S. – PROTOTIPO EDUCATIVO
+
+ARCHIVOS
+- index.html: estructura y contenido.
+- styles.css: diseño adaptable para computadora y celular.
+- app.js: listas, progreso, recomendaciones, chat demostrativo y guardado local.
+- assets/: carpeta para imágenes o recursos propios.
+
+CÓMO ABRIR
+1. Descomprime el archivo ZIP.
+2. Abre la carpeta Mochila_SOS.
+3. Haz doble clic en index.html para verlo en el navegador.
+4. Para publicarlo, sube el contenido de esta carpeta (no la carpeta ZIP) a un repositorio de GitHub Pages.
+
+FUNCIONES
+- Mochila por perfil con casillas y progreso guardado en el navegador.
+- Recomendaciones antes, durante y después para cuatro fenómenos.
+- Mapa ilustrativo con zonas de ejemplo y punto de encuentro guardado.
+- Asistente automatizado de orientación general y controles de voz si el navegador los admite.
+- Lista de organización familiar.
+
+IMPORTANTE
+Este es un prototipo independiente de reemplazo/mejora. No modifica automáticamente el repositorio de GitHub de tu compañera. Para actualizar ese sitio necesitarás acceso de escritura al repositorio o que la persona propietaria suba estos archivos.
+El mapa es ilustrativo, no contiene cartografía oficial ni GPS. No uses las zonas dibujadas para una evacuación real. Verifica información con INDECI y autoridades locales.
+El asistente es demostrativo, no es una IA médica ni un servicio de emergencia. La voz depende del navegador. Las fuentes externas de tipografía requieren internet; el contenido principal está en archivos locales.

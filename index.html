@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071b36">
+  <title>Mochila S.O.S. | Prepárate hoy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#inicio"><span class="brand-mark">S.O.S.</span><span><b>MOCHILA</b><small>PREPARACIÓN Y SEGURIDAD</small></span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+  <nav id="nav">
+    <a href="#inicio">Inicio</a><a href="#mochila">Mi mochila</a><a href="#fenomenos">Fenómenos</a>
+    <a href="#mapa">Mapa</a><a href="#asistente">Asistente</a><a href="#organizacion">Organización</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="hero-copy">
+    <span class="eyebrow">ESTAR PREPARADOS HACE LA DIFERENCIA</span>
+    <h1>Tu seguridad<br><em>empieza aquí.</em></h1>
+    <p>Organiza tu mochila de emergencia, aprende cómo actuar y prepara un plan familiar desde un solo lugar.</p>
+    <div class="hero-actions"><a class="btn primary" href="#mochila">Organizar mi mochila</a><a class="btn ghost" href="#fenomenos">Ver recomendaciones</a></div>
+    <div class="hero-note"><span class="pulse"></span> Contenido básico disponible sin conexión después de cargar la página.</div>
+  </div>
+  <div class="hero-art">
+    <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+    <div class="shield">✓</div><div class="pack-illustration"><div class="pack-handle"></div><div class="pack-pocket"></div><div class="pack-cross">+</div></div>
+    <div class="floating-tag tag-top">KIT DE EMERGENCIA</div><div class="floating-tag tag-bottom">PREPÁRATE HOY</div>
+  </div>
+</section>
+
+<section class="stats">
+  <div><b>01</b><span>Prepara tu mochila</span></div><div><b>02</b><span>Conoce los riesgos</span></div><div><b>03</b><span>Define un punto seguro</span></div>
+</section>
+
+<section class="section" id="mochila">
+  <div class="section-heading"><div><span class="eyebrow">TU KIT PERSONAL</span><h2>Mi mochila de emergencia</h2></div><p>Selecciona un perfil y marca lo que ya tienes listo. La lista se guarda en este dispositivo.</p></div>
+  <div class="profile-row" id="profiles">
+    <button class="profile active" data-profile="Adulto">Adulto</button><button class="profile" data-profile="Bebé">Bebé</button>
+    <button class="profile" data-profile="Niño">Niño</button><button class="profile" data-profile="Adolescente">Adolescente</button>
+    <button class="profile" data-profile="Adulto mayor">Adulto mayor</button><button class="profile" data-profile="Mascota">Mascota</button>
+  </div>
+  <div class="backpack-layout">
+    <div class="backpack-visual">
+      <div class="bag"><div class="bag-top"></div><div class="bag-body"><span class="bag-cross">+</span><div class="bag-pocket"></div></div></div>
+      <h3 id="profileTitle">Kit para adulto</h3><p>Elementos básicos para una emergencia. Ajusta la lista a las necesidades reales de cada persona.</p>
+      <div class="progress-wrap"><div class="progress-label"><span>Progreso de preparación</span><b id="progressText">0%</b></div><div class="progress"><span id="progressBar"></span></div></div>
+    </div>
+    <div class="checklist-panel"><div class="panel-title"><h3>Lista de artículos</h3><span class="tiny-pill">PERSONALIZABLE</span></div><div id="checklist"></div><p class="disclaimer">Importante: consulta con un profesional de salud sobre medicamentos, dosis y necesidades especiales. No guardes medicamentos sin indicación ni sustituyas tratamientos.</p></div>
+  </div>
+</section>
+
+<section class="section dark-section" id="fenomenos">
+  <div class="section-heading"><div><span class="eyebrow">INFORMACIÓN PARA ACTUAR</span><h2>Fenómenos naturales</h2></div><p>Conoce acciones generales para antes, durante y después. Sigue siempre las indicaciones de las autoridades.</p></div>
+  <div class="phenomena-grid">
+    <article class="phen-card"><div class="phen-icon rain">☂</div><span class="phen-type">LLUVIAS INTENSAS</span><h3>Lluvias e inundaciones</h3><p>Evita cruzar calles o corrientes de agua y mantente informado.</p><button class="text-btn" data-phen="lluvia">Ver recomendaciones →</button></article>
+    <article class="phen-card"><div class="phen-icon slide">⌁</div><span class="phen-type">MOVIMIENTO DE TIERRA</span><h3>Huaicos y deslizamientos</h3><p>Reconoce zonas inestables y aléjate de quebradas durante lluvias fuertes.</p><button class="text-btn" data-phen="huaico">Ver recomendaciones →</button></article>
+    <article class="phen-card"><div class="phen-icon wave">≈</div><span class="phen-type">ZONAS COSTERAS</span><h3>Tsunamis</h3><p>Si hay un sismo fuerte cerca del mar, evacúa hacia zonas altas.</p><button class="text-btn" data-phen="tsunami">Ver recomendaciones →</button></article>
+    <article class="phen-card"><div class="phen-icon storm">ϟ</div><span class="phen-type">TORMENTAS</span><h3>Tormentas eléctricas</h3><p>Busca refugio dentro de una construcción segura y evita espacios abiertos.</p><button class="text-btn" data-phen="tormenta">Ver recomendaciones →</button></article>
+  </div>
+  <div class="more-info"><span>¿Quieres ampliar la información?</span><a href="https://www.gob.pe/indeci" target="_blank" rel="noopener">Consulta información oficial de INDECI ↗</a></div>
+</section>
+
+<section class="section" id="mapa">
+  <div class="section-heading"><div><span class="eyebrow">PLANIFICA TU RUTA</span><h2>Mapa de seguridad</h2></div><p>Vista demostrativa para organizar puntos de encuentro. Verifica las rutas y zonas seguras con tu municipalidad o autoridades.</p></div>
+  <div class="map-layout">
+    <div class="map-demo" role="img" aria-label="Mapa ilustrativo con calles, zona segura verde y zona de riesgo roja">
+      <div class="map-grid"></div><div class="road road-a"></div><div class="road road-b"></div><div class="road road-c"></div>
+      <div class="block block-a"></div><div class="block block-b"></div><div class="block block-c"></div><div class="block block-d"></div>
+      <div class="zone safe-zone"><span>●</span> ZONA SEGURA (EJEMPLO)</div><div class="zone risk-zone"><span>!</span> ZONA DE RIESGO (EJEMPLO)</div>
+      <div class="map-pin pin-home">⌂<small>Casa</small></div><div class="map-pin pin-meet">★<small>Encuentro</small></div>
+      <div class="map-label label-1">Av. Principal</div><div class="map-label label-2">Calle Los Pinos</div>
+      <div class="map-legend"><span><i class="green-dot"></i> Punto seguro ilustrativo</span><span><i class="red-dot"></i> Riesgo ilustrativo</span></div>
+    </div>
+    <aside class="map-side"><div class="map-side-icon">⌖</div><h3>Tu punto de encuentro</h3><p>Elige con tu familia un lugar fácil de reconocer, lejos de peligros y conocido por todos.</p><label for="meetingPoint">Nombre del punto</label><input id="meetingPoint" placeholder="Ej. Parque central"><button class="btn primary full" id="saveMeeting">Guardar punto</button><p class="saved-msg" id="meetingSaved"></p><div class="warning-note">Este mapa no muestra datos oficiales ni tu ubicación GPS. No lo uses para decidir una evacuación real.</div></aside>
+  </div>
+</section>
+
+<section class="section assistant-section" id="asistente">
+  <div class="assistant-card">
+    <div class="robot-wrap"><div class="robot"><div class="antenna"></div><div class="robot-face"><i></i><i></i><b></b></div><div class="robot-body"><span> S.O.S. </span></div></div><div class="robot-glow"></div></div>
+    <div class="assistant-content"><span class="eyebrow">ASISTENTE DE PREPARACIÓN</span><h2>Hola, soy S.O.S. AI</h2><p>Puedo ayudarte a revisar tu mochila y pensar en necesidades particulares de tu hogar.</p>
+      <div class="chat-window" id="chatWindow"><div class="bot-message">¡Hola! Cuéntame qué deseas organizar. Por ejemplo: “Necesito preparar la mochila para una familia con un bebé y una mascota”.</div></div>
+      <form id="chatForm" class="chat-form"><input id="chatInput" placeholder="Escribe tu consulta..." autocomplete="off"><button aria-label="Enviar">➤</button></form>
+      <div class="voice-actions"><button class="voice-btn" id="speakBtn">🔊 Leer última respuesta</button><button class="voice-btn" id="listenBtn">🎙 Dictar (si tu navegador lo permite)</button></div>
+      <small class="disclaimer">Asistente demostrativo: ofrece orientación general, no reemplaza a autoridades ni profesionales. No envíes datos personales o médicos sensibles. La conversación automatizada puede funcionar sin internet; el reconocimiento de voz depende del navegador.</small>
+    </div>
+  </div>
+</section>
+
+<section class="section organization" id="organizacion">
+  <div class="section-heading"><div><span class="eyebrow">PLAN FAMILIAR</span><h2>Organización en equipo</h2></div><p>Acuerden quién hace cada tarea y revisen el plan periódicamente.</p></div>
+  <div class="tasks">
+    <label><input type="checkbox"> Definir un punto de encuentro cercano.</label>
+    <label><input type="checkbox"> Guardar teléfonos importantes en papel.</label>
+    <label><input type="checkbox"> Revisar agua, alimentos y linterna.</label>
+    <label><input type="checkbox"> Acordar cómo ayudar a niños, adultos mayores y mascotas.</label>
+    <label><input type="checkbox"> Revisar la mochila y sus fechas de vencimiento.</label>
+  </div>
+</section>
+</main>
+<footer><a class="brand" href="#inicio"><span class="brand-mark">S.O.S.</span><span><b>MOCHILA</b><small>PREPARACIÓN Y SEGURIDAD</small></span></a><p>Prepárate hoy. Cuida a quienes más quieres.</p><small>Proyecto educativo · Contenido informativo</small></footer>
+
+<div class="modal" id="phenModal" aria-hidden="true"><div class="modal-card"><button class="close-modal" id="closeModal" aria-label="Cerrar">×</button><span class="eyebrow">GUÍA DE PREVENCIÓN</span><h2 id="modalTitle"></h2><div id="modalContent"></div></div></div>
+<script src="app.js"></script>
+</body></html>
